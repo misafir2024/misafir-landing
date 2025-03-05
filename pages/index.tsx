@@ -1,5 +1,5 @@
-import { Card, Row, Col, Typography, Button } from "antd";
-import styles from "../styles/explore.module.css";
+import { Card, Row, Col, Typography } from "antd"
+import styles from "../styles/explore.module.css"
 
 // Mock event data
 const mockEvents = [
@@ -27,10 +27,10 @@ const mockEvents = [
     host: "Lara Mori",
     image: "/images/mothers-day.jpg",
   },
-];
+]
 
 // Mock meal type filters
-const mealTypes = ["Family-Style Meal", "Casual Dining", "Fine Dining"];
+const mealTypes = ["Family-Style Meal", "Casual Dining", "Fine Dining"]
 
 export default function ExplorePage() {
   return (
@@ -42,9 +42,7 @@ export default function ExplorePage() {
         {/* Sayfa yakında hizmette olacak mesajı */}
         <p className={styles.comingSoon}>This page will be available soon</p>
 
-        <div className={styles.authButtons}>
-         
-        </div>
+        <div className={styles.authButtons}></div>
       </header>
 
       {/* ✅ HERO SECTION */}
@@ -81,18 +79,9 @@ export default function ExplorePage() {
               <Card
                 hoverable
                 className={styles.cardContainer}
-                cover={
-                  <img
-                    src={event.image}
-                    alt={event.title}
-                    className={styles.cardImage}
-                  />
-                }
+                cover={<img src={event.image} alt={event.title} className={styles.cardImage} />}
               >
-                <Card.Meta
-                  title={event.title}
-                  description={`Hosted by ${event.host}`}
-                />
+                <Card.Meta title={event.title} description={`Hosted by ${event.host}`} />
               </Card>
             </Col>
           ))}
@@ -104,5 +93,6 @@ export default function ExplorePage() {
         <p>© 2025 Guesto. All rights reserved.</p>
       </footer>
     </div>
-  );
+  )
 }
+
