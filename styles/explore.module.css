@@ -131,10 +131,18 @@
     justify-content: space-between;
   }
   
+  /* Image container for better control */
+  .imageContainer {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+    border-radius: 5px;
+  }
+  
   /* Kart resimleri */
   .cardImage {
     width: 100%;
-    height: 180px;
+    height: 100%;
     object-fit: cover;
     border-radius: 5px;
   }

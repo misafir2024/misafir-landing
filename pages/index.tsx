@@ -1,6 +1,5 @@
 import { Card, Row, Col, Typography } from "antd"
-import styles from "../styles/explore.module.css";
-
+import styles from "../styles/explore.module.css"
 // Mock event data
 const mockEvents = [
   {
@@ -72,14 +71,20 @@ export default function ExplorePage() {
       {/* ✅ EVENT LISTINGS */}
       <div className={styles.bottomSection}>
         <Row gutter={[10, 10]} justify="center">
-          {" "}
-          {/* Burada mesafeyi azalttım */}
           {mockEvents.map((event) => (
             <Col key={event.id} xs={12} sm={8} md={6} lg={6}>
               <Card
                 hoverable
                 className={styles.cardContainer}
-                cover={<img src={event.image} alt={event.title} className={styles.cardImage} />}
+                cover={
+                  <div className={styles.imageContainer}>
+                    <img
+                      src={event.image || "/placeholder.svg?height=180&width=230"}
+                      alt={event.title}
+                      className={styles.cardImage}
+                    />
+                  </div>
+                }
               >
                 <Card.Meta title={event.title} description={`Hosted by ${event.host}`} />
               </Card>
