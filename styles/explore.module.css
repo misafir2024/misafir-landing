@@ -1,183 +1,182 @@
 .pageContainer {
-    width: 100%;
-    min-height: 100vh;
-    background: #121212;
-    color: #fff;
-    font-family: Arial, sans-serif;
-  }
-  
-  /* ✅ HEADER */
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 30px;
-    background: black;
-  }
-  
-  .logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #e32652;
-  }
-  
-  .authButtons {
-    display: flex;
-    gap: 10px;
-  }
-  
-  .authButton {
-    background: transparent;
-    border: 1px solid white;
-    color: white;
-    padding: 5px 15px;
-    cursor: pointer;
-  }
-  
-  .authButton:hover {
-    background: #e32652;
-    border-color: #e32652;
-  }
-  
-  /* ✅ HERO SECTION */
-  .topSection {
-    background: url("/images/background.jpg") center center / cover no-repeat;
-    padding: 60px 20px;
-    text-align: center;
-  }
-  
-  .centeredTitle {
-    font-size: 2.5rem;
-    font-weight: bold;
-    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.6);
-    color: white;
-  }
-  
-  /* ✅ SEARCH BOX */
-  .searchBox {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 20px;
-  }
-  
-  .searchBox input {
-    padding: 10px;
-    width: 180px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-  }
-  
-  .searchBox button {
-    padding: 10px 15px;
-    background: #e32652;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .searchBox button:hover {
-    background: white;
-    color: black;
-  }
-  
-  /* ✅ QUICK FILTERS */
-  .filtersContainer {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    /* Filtre butonları arasındaki mesafeyi azalttım */
-    margin: 20px 0;
-  }
-  
-  .filterButton {
-    background: #333;
-    color: white;
-    border: 1px solid white;
-    padding: 8px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .filterButton:hover {
-    background: #e32652;
-    border-color: #e32652;
-  }
-  
-  /* ✅ EVENT LISTINGS */
-  .bottomSection {
-    padding: 20px;
-    text-align: center;
-    max-width: 1100px;
-    /* Kartları çok yayılmasını önlemek için sınır koydum */
-    margin: 0 auto;
-    /* Sayfanın ortasına hizaladım */
-  }
-  
-  /* KART TASARIMI */
-  .cardContainer {
-    background-color: #fff;
-    color: #fff;
-    padding: 16px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-    text-align: center;
-    width: 230px;
-    /* Kartları biraz daraltarak yan yana daha iyi oturmasını sağladım */
-    height: 320px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  
-  /* Image container for better control */
-  .imageContainer {
-    width: 100%;
-    height: 180px;
-    overflow: hidden;
-    border-radius: 5px;
-  }
-  
-  /* Kart resimleri */
-  .cardImage {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 5px;
-  }
-  
-  /* Başlık ve açıklamalar */
-  .cardContainer .ant-card-meta-title {
-    color: white !important;
-    font-size: 16px;
-    font-weight: bold;
-  }
-  
-  .cardContainer .ant-card-meta-description {
-    color: white !important;
-    font-size: 14px;
-    opacity: 1;
-    /* Tam beyaz yazı */
-  }
-  
-  /* ✅ FOOTER */
-  .footer {
-    background: black;
-    text-align: center;
-    padding: 15px;
-    margin-top: 30px;
-    font-size: 14px;
-  }
-  
-  .comingSoon {
-    font-size: 14px;
-    font-weight: bold;
-    color: #ffcc00;
-    /* Sarı renkte belirgin bir mesaj */
-    text-transform: uppercase;
-    margin: 0 20px;
-    text-align: center;
-  }
-  
-  
+  width: 100%;
+  min-height: 100vh;
+  background: #121212;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+/* ✅ HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: black;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #e32652;
+}
+
+.authButtons {
+  display: flex;
+  gap: 10px;
+}
+
+.authButton {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 5px 15px;
+  cursor: pointer;
+}
+
+.authButton:hover {
+  background: #e32652;
+  border-color: #e32652;
+}
+
+/* ✅ HERO SECTION */
+.topSection {
+  background: url("/images/background.jpg") center center / cover no-repeat;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.centeredTitle {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.6);
+  color: #ffcc00; /* Changed from white to yellow */
+}
+
+/* ✅ SEARCH BOX */
+.searchBox {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.searchBox input {
+  padding: 10px;
+  width: 180px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.searchBox button {
+  padding: 10px 15px;
+  background: #e32652;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.searchBox button:hover {
+  background: white;
+  color: black;
+}
+
+/* ✅ QUICK FILTERS */
+.filtersContainer {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  /* Filtre butonları arasındaki mesafeyi azalttım */
+  margin: 20px 0;
+}
+
+.filterButton {
+  background: #333;
+  color: white;
+  border: 1px solid white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.filterButton:hover {
+  background: #e32652;
+  border-color: #e32652;
+}
+
+/* ✅ EVENT LISTINGS */
+.bottomSection {
+  padding: 20px;
+  text-align: center;
+  max-width: 1100px;
+  /* Kartları çok yayılmasını önlemek için sınır koydum */
+  margin: 0 auto;
+  /* Sayfanın ortasına hizaladım */
+}
+
+/* KART TASARIMI */
+.cardContainer {
+  background-color: #fff;
+  color: #000;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  width: 230px;
+  /* Kartları biraz daraltarak yan yana daha iyi oturmasını sağladım */
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Image container for better control */
+.imageContainer {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+/* Kart resimleri */
+.cardImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* Başlık ve açıklamalar */
+.cardContainer .ant-card-meta-title {
+  color: black !important;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.cardContainer .ant-card-meta-description {
+  color: grey !important;
+  font-size: 14px;
+  opacity: 1;
+  /* Tam beyaz yazı */
+}
+
+/* ✅ FOOTER */
+.footer {
+  background: black;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+  font-size: 14px;
+}
+
+.comingSoon {
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffcc00;
+  /* Sarı renkte belirgin bir mesaj */
+  text-transform: uppercase;
+  margin: 0 20px;
+  text-align: center;
+}
+

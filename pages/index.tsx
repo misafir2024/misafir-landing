@@ -1,5 +1,6 @@
 import { Card, Row, Col, Typography } from "antd"
 import styles from "../styles/explore.module.css"
+
 // Mock event data
 const mockEvents = [
   {
